@@ -11,7 +11,6 @@ body {
 }
 
 /* http://ryanfait.com/html5-sticky-footer/ */
-
 html,
 body {
   height: 100%;
@@ -27,12 +26,9 @@ body {
 footer,
 .push {
   height: 105px;
-}
-
-/* end sticky footer styling */
+} /* end sticky footer styling */
 
 /* start hover styling */
-
 #logo:hover,
 input[type=submit]:hover {
   background: #5e7f7e;
@@ -45,12 +41,9 @@ nav a:hover {
 .social:hover {
   cursor: pointer;
   opacity: 0.8;
-}
-
-/* end hover styling */
+} /* end hover styling */
 
 /* general */
-
 .container {
   width: 100%;
   max-width: 960px;
@@ -90,7 +83,6 @@ h3 {
 }
 
 /* header */
-
 #masthead {
   position: fixed;
   z-index: 99;
@@ -136,7 +128,6 @@ nav a:first-child {
 }
 
 /* footer */
-
 footer {
   padding: 30px 0;
   clear: both;
@@ -149,7 +140,6 @@ footer {
 }
 
 /* sidebar */
-
 .sidebar {
   float: right;
   width: 100%;
@@ -180,7 +170,6 @@ h3,
 }
 
 /* main */
-
 #main-container {
   padding-top: 130px;
 }
@@ -196,7 +185,6 @@ h3,
 }
 
 /* portfolio page */
-
 .work {
   position: relative;
   float: left;
@@ -238,7 +226,6 @@ h3,
 }
 
 /* contact page */
-
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -275,4 +262,47 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/*Media Queries here - no modification for screens beyond 980 pixels wide*/
+@media only screen and (max-width: 980px) {
+  /* for 768px to 980px wide */
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-6 {width: 50%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 768px) {
+  /* for 641px to 768px wide */
+  .col-s-6 {width: 50%;}
+  .col-s-12 {width: 100%;}
+
+  .sidebar, 
+  header nav {
+    float: left;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  /* for t-tiny screens */
+  .col-xs-6 {width: 50%;}
+  .col-xs-12 {width: 100%;}
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  header {
+    position: static;
+  }
+
+  .sidebar, 
+  header nav {
+    float: left;
+  }
+
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Alan Davison</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -12,8 +13,8 @@
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Alan Davison</a>
-      <nav>
+      <a class="col-xs-12 col-s-6 col-6" href="index.html" id="logo">Alan Davison</a>
+      <nav class="col-xs-12 col-s-6 col-6">
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
@@ -23,20 +24,20 @@
 
   <div class="wrapper">
     <div id="main-container" class="container">
-      <section class="main-section">
+
+      <section class="main-section col-xs-12 col-s-12 col-8">
         <h1>About Me</h1>
 
         <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
 
         <p>Hello, my name is Alan but my friends just call me occasionally. In the words of Jerry Garcia, "What a long, strange trip it's been." Sometimes I can't believe that in between music festivals, I somehow managed to hold down a job as a medical device developer for over 36 years.</p>  
           
-        <p>And over those years, I have worn many hats in the medical device world. I have been an electrical engineer, software engineer, program manager and a systems engineer. I have worked in many different groups from operations to advanced development in different capacities from individual contributor to senior manager.</p>
+        <p>And over those years, I have worn many hats in the medical device world. I have been an electrical engineer, software engineer, program manager and a systems engineer. I have worked in many different groups from operations to  advanced development in different capacities from individual contributor to senior manager.</p>
             
         <p>One thing I have always enjoyed is the chance to work with new and interesting technologies. Starting  with some of the first microprocessors and working in assembly code(!) on the first IV infusion pumps. And then later with C and C++ on more complex distributed systems. Learning the Java language was also fun and I earned enough extension credit to qualify for the Java Certificate.</p>
+      </section> <!-- main-section -->
 
-      </section>
-
-      <section class="sidebar">
+      <section class="sidebar col-xs-12 col-s-12 col-4">
         <div id="connect">
           <h2>Connect with Me</h2>
 
@@ -44,19 +45,19 @@
           <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
           <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
         </div>
-
-      </section>
+      </section> <!-- sidebar -->
             
-      <div class="push"></div>
+      <div class="push"></div>  <!-- for sticky footer fix -->
 
-    </div>
-  </div>
+    </div> <!-- main-container -->
+  </div> <!-- wrapper -->
 
   <footer>
     <div class="container">
       Copyright &copy; 2016 Your Name
     </div>
   </footer>
+
 </body>
 
 </html>
